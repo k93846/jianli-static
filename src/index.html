@@ -233,22 +233,46 @@
           margin: 0;
         }
       }
-      .zaixianjianli{
+      .zaixianjianli {
         all: revert;
         text-decoration: none;
         font-size: small;
         color: black;
         position: relative;
-        top:-13px;
+        top: -13px;
         left: -10px;
+      }
+      .education h3 {
+        font-size: 18px;
+        color: #333;
+      }
+      .education header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
       }
     </style>
   </head>
 
   <body>
     <article>
-      <a class="zaixianjianli" href="https://k93846.gitee.io/jianli-static/src/index.html">在线查看本简历:https://k93846.gitee.io/jianli-static/src/index.html</a>
-      <a href="https://k93846.gitee.io/jianli-alive/public/index.html" style="text-align: center;  display: block; width: 9em; margin: 0 auto; font-size: small;" target="_blank">点击查看动态简历</a>
+      <a
+        class="zaixianjianli"
+        href="https://k93846.gitee.io/jianli-static/src/index.html"
+        >在线查看本简历:https://k93846.gitee.io/jianli-static/src/index.html</a
+      >
+      <a
+        href="https://k93846.gitee.io/jianli-alive/public/index.html"
+        style="
+          text-align: center;
+          display: block;
+          width: 9em;
+          margin: 0 auto;
+          font-size: small;
+        "
+        target="_blank"
+        >点击查看动态简历</a
+      >
       <section class="bio">
         <h1>石东昊</h1>
         <img src="images/picture.jpg" alt="" width="107.4" height="132.3" />
@@ -257,7 +281,73 @@
         <p>邮箱：1162858020@qq.com</p>
       </section>
 
-      <section class="projects">
+      <section class="education">
+        <h2>教育经历</h2>
+        <header>
+          <h3>中央民族大学(985工程，双一流A)&nbsp;&nbsp;&nbsp;&nbsp;本科</h3>
+          <span><time>2017年</time>~<time>2021年</time></span>
+        </header>
+        <ul>
+          <li>1.在校修读计算机原理、计算机基础、逻辑学等相关课程。</li>
+          <li>2.大学期间担任班级组织委员，并在院团委组织部工作。</li>
+          <li>3.两次作为领队组织社会实践，其中一次实践成果获院级三等奖。</li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <h2>核心技能</h2>
+        <h3>· 概述</h3>
+        <div class="wrapper">
+          <ul>
+            <li>
+              1.熟练掌握页面制作技巧，熟练掌握HTML、CSS、JavaScript基本功，能将设计稿<strong>完美还原</strong>。
+            </li>
+            <li>
+              2.掌握<strong>前后端分离</strong>技术，包括使用
+              Ajax、fetch、<strong>axios</strong> 对数据获取；使用
+              <strong>JSONP</strong
+              >、CORS、服务器中转手段实现跨域获取数据；以及配置 Cookie、Session
+              等与后端合理交互。
+            </li>
+            <li>
+              3.熟练掌握 <strong>Vue全家桶</strong>的使用，包括
+              VueCli、Vite、VueRouter、Vuex 等。
+            </li>
+            <li>
+              4.熟悉 ES6，包括 let与const / Promise / async和await /
+              解构赋值等。
+            </li>
+            <li>
+              5.掌握开发辅助工具如<strong>element-ui</strong>、ant-design组件库，
+              <strong>Webpack</strong
+              >的配置、<strong>SASS</strong>语法、<strong> Git</strong
+              >版本控制、<strong> Vscode</strong
+              >编程工具、npm包管理工具以及<strong>AI辅助编程</strong> 等。
+            </li>
+            <li>6.能够使用<strong>uni-app</strong>进行跨端开发。</li>
+            <li>
+              7.了解
+              <strong>TypeScript</strong> 的使用和<strong>Vue3</strong>新特性。
+            </li>
+          </ul>
+        </div>
+        <h3 style="margin-top: 20px;">· 细节</h3>
+        <div class="wrapper" >
+          <ul>
+            <li style="line-height: 1.5;">
+              1.基本功方面：熟练使用HTML各类标签（ul,ol,li,section,header,footer,main,table,span,div,p等）;熟练使用CSS的float,flex,grid布局，熟练使用margin,transform,position,top,left等对元素进行定位，使用z-index管理层叠上下文，能够实现transition和animation以及动态class的CSS动画；熟练使用JavaScript操作页面DOM进行交互设计，能够搭建高度语义化的页面基本结构，保证代码可读性高、复用性强、易维护。
+            </li>
+            <li style="line-height: 1.5;">
+              2.前后端分离开发方面：能够使用原生Ajax和axios包，并用两者封装request请求函数；熟悉GET,POST等请求类型，能够整理FormData结构的数据并发送至服务端。
+            </li>
+            <li style="line-height: 1.5;">
+              3.Vue全家桶方面：能够使用VueCli / Vite + Webpack快速搭建项目并配置路由。掌握Vue2和Vue3两者语法，熟练掌握props,methods,computed,watch等属性,能够实现transition动效、自定义slot插槽,知晓并使用v-model、this.$emit等语法糖，能够自动适应Vue2或Vue3开发；熟练掌握并使用生命周期钩子、懒加载、component标签实现动态组件和Vuex状态管理器等相关技术。
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="projects page2">
         <h2>项目经历</h2>
         <ol>
           <li>
@@ -265,13 +355,11 @@
               <h3>素彩 UI</h3>
               <span>
                 <a href="https://gitee.com/k93846/su-cai-ui-code">源码链接</a>
-                <a href="http://k93846.gitee.io/su-cai-ui-web/#/"
-                  >项目预览</a
-                >
+                <a href="http://k93846.gitee.io/su-cai-ui-web/#/">项目预览</a>
               </span>
             </header>
             <p>
-              一款基于 <strong>Vue3</strong> / <strong>Vite</strong> /
+              这是一款从 0 构建的基于 <strong>Vue3</strong> / <strong>Vite</strong> /
               <strong>JavaScript</strong> 的 UI
               框架。可以使用npm命令快速安装和引用。
             </p>
@@ -333,36 +421,6 @@
         </ol>
       </section>
 
-      <section class="skills">
-        <h2>技能</h2>
-        <div class="wrapper">
-          <!-- <div id="skills"></div> -->
-          <ul>
-            <li>
-              熟悉页面制作技巧，熟练掌握HTML、CSS、JavaScript基本功，能将设计稿<strong>完美还原</strong>。
-            </li>
-            <li>
-              熟悉<strong>前后端分离</strong>技术，包括
-              AJAX、跨域、前端路由、Cookie、Session 等。
-            </li>
-            <li>
-              熟练掌握 <strong>Vue全家桶</strong>的使用，包括
-              VueCli、Vite、VueRouter、Vuex 等。
-            </li>
-            <li>熟悉 ES6，包括 let / Promise / await / 析构赋值等。</li>
-            <li>
-              了解 <strong>TypeScript</strong> 的使用和
-              <strong>Vue3</strong>新特性。
-            </li>
-            <li>
-              掌握开发辅助工具如 <strong> SASS</strong>语法、
-              <strong> Git</strong>版本控制、<strong> Vscode</strong
-              >编程工具以及<strong>AI辅助编程</strong> 等。
-            </li>
-          </ul>
-        </div>
-      </section>
-
       <section class="openSource">
         <h2>简单的开源项目</h2>
         <ul>
@@ -382,15 +440,17 @@
               这是一个类似于搜索引擎首页的小项目，实现了内嵌搜索引擎、<strong>页面收藏</strong>、快速访问等功能。
             </p>
           </li>
-          <li class="page2">
+          <li>
             <header>
               <h3>会动的皮卡丘</h3>
               <span>
                 <a href="https://gitee.com/k93846/pikachu-1">源码链接</a>
-                <a href="https://k93846.gitee.io/pikachu-1/dist/test.html">项目预览</a>
+                <a href="https://k93846.gitee.io/pikachu-1/dist/test.html"
+                  >项目预览</a
+                >
               </span>
             </header>
-            <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+            <p>这是使用 <strong>CSS3和动画</strong> 制作的一个可爱作品</p>
           </li>
         </ul>
       </section>
@@ -405,20 +465,32 @@
               <span><time>2021年7月</time>~<time>2023年4月</time></span>
             </header>
             <ul>
-              <li>负责党员信息系统的数据录入、管理和更新工作。</li>
-              <li>负责党组织管理系统树结构搭建、逻辑整理工作。</li>
-              <li>负责党员活动策划、组织、总结、资料归档工作。</li>
+              <li>1.负责党员信息系统网页的数据管理、结构管理和更新工作。</li>
+              <li>2.负责党组织管理系统树结构搭建、逻辑整理工作。</li>
               <li>
-                工作期间所有季度绩效考核平均排名在部门内位列前25%，曾获公司演讲比赛第三名。
+                3.工作期间所有季度绩效考核平均排名在部门内位列前25%，曾获公司演讲比赛第三名。
               </li>
             </ul>
           </li>
-          <li></li>
+
+          <li>
+            <header>
+              <h3>技术精进与Web项目打造</h3>
+              <span><time>2023年4月</time>~<time>2023年11月</time></span>
+            </header>
+            <ul>
+              <li>
+                &nbsp;&nbsp; 在开发项目历练中我逐渐意识到掌握原生底层代码的重要性，因此主动去补足以往可能有欠缺的JavaScript、TS尤其是<strong>ES6</strong>的技术和相关语法特点；并使用JavaScript原生代码操作DOM开发开源项目。
+                <br>&nbsp;&nbsp;在此期间，我还重新阅读了一遍Vue.js的文档和Webpack的配置项，这让我对Vue2和Vue3以及Vue+Webpack组合开发有了更加深入的掌握，并将其用在兼职工作中。
+                <br>&nbsp;&nbsp;这段经历让我的技术功底更加扎实、<strong>代码逻辑更加通透</strong>，相信能够更好地适应快节奏的开发状态了。
+              </li>
+            </ul>
+          </li>
         </ol>
       </section>
 
       <section class="others">
-        <h2>其他链接</h2>
+        <h2 style="margin-bottom: 5px;">其他链接</h2>
         <ul>
           <li>
             <a
@@ -428,24 +500,15 @@
           </li>
           <li>
             <a
-              href="https://k93846.gitee.io/jianli-alive/public/index.html" target="_blank"
+              href="https://k93846.gitee.io/jianli-alive/public/index.html"
+              target="_blank"
               >动态简历</a
             >，我为我的简历添加了一些动态效果，点击即可查看。
           </li>
         </ul>
       </section>
 
-      <section class="education">
-        <h2>教育经历</h2>
-        <ul>
-          <li>
-            <span><time>2017年</time>~<time>2021年</time></span>
-            <p>
-              中央民族大学(985工程，双一流A)&nbsp;&nbsp;&nbsp;&nbsp;本科&nbsp;&nbsp;&nbsp;&nbsp;行政管理
-            </p>
-          </li>
-        </ul>
-      </section>
+ 
     </article>
     <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
     <script src="./main.js"></script>
