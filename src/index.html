@@ -232,6 +232,9 @@
         .jobs header > span {
           margin: 0;
         }
+        .education header{
+          flex-direction: column;
+        }
       }
       .zaixianjianli {
         all: revert;
@@ -250,6 +253,9 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 12px;
+      }
+      *{
+        word-break: break-all;
       }
     </style>
   </head>
@@ -283,15 +289,23 @@
 
       <section class="education">
         <h2>教育经历</h2>
-        <header>
-          <h3>中央民族大学(985工程，双一流A)&nbsp;&nbsp;&nbsp;&nbsp;本科</h3>
-          <span><time>2017年</time>~<time>2021年</time></span>
-        </header>
-        <ul>
-          <li>1.在校修读计算机原理、计算机基础、逻辑学等相关课程。</li>
-          <li>2.大学期间担任班级组织委员，并在院团委组织部工作。</li>
-          <li>3.两次作为领队组织社会实践，其中一次实践成果获院级三等奖。</li>
-        </ul>
+        <ol>
+          <li>
+            <header>
+              <h3>
+                中央民族大学(985工程，双一流A)&nbsp;&nbsp;&nbsp;&nbsp;本科
+              </h3>
+              <span><time>2017年</time>~<time>2021年</time></span>
+            </header>
+            <ul>
+              <li>1.在校修读计算机原理、计算机基础、逻辑学等相关课程。</li>
+              <li>2.大学期间担任班级组织委员，并在院团委组织部工作。</li>
+              <li>
+                3.两次作为领队组织社会实践，其中一次实践成果获院级三等奖。
+              </li>
+            </ul>
+          </li>
+        </ol>
       </section>
 
       <section class="skills">
@@ -331,17 +345,18 @@
             </li>
           </ul>
         </div>
-        <h3 style="margin-top: 20px;">· 细节</h3>
-        <div class="wrapper" >
+        <h3 style="margin-top: 20px">· 细节</h3>
+        <div class="wrapper">
           <ul>
-            <li style="line-height: 1.5;">
+            <li style="line-height: 1.5">
               1.基本功方面：熟练使用HTML各类标签（ul,ol,li,section,header,footer,main,table,span,div,p等）;熟练使用CSS的float,flex,grid布局，熟练使用margin,transform,position,top,left等对元素进行定位，使用z-index管理层叠上下文，能够实现transition和animation以及动态class的CSS动画；熟练使用JavaScript操作页面DOM进行交互设计，能够搭建高度语义化的页面基本结构，保证代码可读性高、复用性强、易维护。
             </li>
-            <li style="line-height: 1.5;">
+            <li style="line-height: 1.5">
               2.前后端分离开发方面：能够使用原生Ajax和axios包，并用两者封装request请求函数；熟悉GET,POST等请求类型，能够整理FormData结构的数据并发送至服务端。
             </li>
-            <li style="line-height: 1.5;">
-              3.Vue全家桶方面：能够使用VueCli / Vite + Webpack快速搭建项目并配置路由。掌握Vue2和Vue3两者语法，熟练掌握props,methods,computed,watch等属性,能够实现transition动效、自定义slot插槽,知晓并使用v-model、this.$emit等语法糖，能够自动适应Vue2或Vue3开发；熟练掌握并使用生命周期钩子、懒加载、component标签实现动态组件和Vuex状态管理器等相关技术。
+            <li style="line-height: 1.5">
+              3.Vue全家桶方面：能够使用VueCli / Vite +
+              Webpack快速搭建项目并配置路由。掌握Vue2和Vue3两者语法，熟练掌握props,methods,computed,watch等属性,能够实现transition动效、自定义slot插槽,知晓并使用v-model、this.$emit等语法糖，能够自动适应Vue2或Vue3开发；熟练掌握并使用生命周期钩子、懒加载、component标签实现动态组件和Vuex状态管理器等相关技术。
             </li>
           </ul>
         </div>
@@ -359,8 +374,8 @@
               </span>
             </header>
             <p>
-              这是一款从 0 构建的基于 <strong>Vue3</strong> / <strong>Vite</strong> /
-              <strong>JavaScript</strong> 的 UI
+              这是一款从 0 构建的基于 <strong>Vue3</strong> /
+              <strong>Vite</strong> / <strong>JavaScript</strong> 的 UI
               框架。可以使用npm命令快速安装和引用。
             </p>
             <p>
@@ -480,9 +495,10 @@
             </header>
             <ul>
               <li>
-                &nbsp;&nbsp; 在开发项目历练中我逐渐意识到掌握原生底层代码的重要性，因此主动去补足以往可能有欠缺的JavaScript、TS尤其是<strong>ES6</strong>的技术和相关语法特点；并使用JavaScript原生代码操作DOM开发开源项目。
-                <br>&nbsp;&nbsp;在此期间，我还重新阅读了一遍Vue.js的文档和Webpack的配置项，这让我对Vue2和Vue3以及Vue+Webpack组合开发有了更加深入的掌握，并将其用在兼职工作中。
-                <br>&nbsp;&nbsp;这段经历让我的技术功底更加扎实、<strong>代码逻辑更加通透</strong>，相信能够更好地适应快节奏的开发状态了。
+                &nbsp;&nbsp;
+                在开发项目历练中我逐渐意识到掌握原生底层代码的重要性，因此主动去补足以往可能有欠缺的JavaScript、TS尤其是<strong>ES6</strong>的技术和相关语法特点；并使用JavaScript原生代码操作DOM开发开源项目。
+                <br />&nbsp;&nbsp;在此期间，我还重新阅读了一遍Vue.js的文档和Webpack的配置项，这让我对Vue2和Vue3以及Vue+Webpack组合开发有了更加深入的掌握，并将其用在兼职工作中。
+                <br />&nbsp;&nbsp;这段经历让我的技术功底更加扎实、<strong>代码逻辑更加通透</strong>，相信能够更好地适应快节奏的开发状态了。
               </li>
             </ul>
           </li>
@@ -490,7 +506,7 @@
       </section>
 
       <section class="others">
-        <h2 style="margin-bottom: 5px;">其他链接</h2>
+        <h2 style="margin-bottom: 5px">其他链接</h2>
         <ul>
           <li>
             <a
@@ -507,8 +523,6 @@
           </li>
         </ul>
       </section>
-
- 
     </article>
     <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
     <script src="./main.js"></script>
